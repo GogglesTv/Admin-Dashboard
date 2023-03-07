@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 25% 99%;
+}
+
+.header {
+  border: 1px solid black;
+  box-shadow: 1% grey;
+  grid-column: 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50% 50%;
+}
+
+.header > .top-portion {
+  grid-row: 1 / 2;
+}
+
+.header .header > .bottom-portion {
+  grid-row: 2 / 3;
+}
+
+.sidebar {
+  grid-column: 1;
+}
+
+.main-content {
+  grid-column: 2;
+  grid-row: 2;
+}
